@@ -1,3 +1,5 @@
+[![CI](https://github.com/vineetbansal/rusty/actions/workflows/ci.yml/badge.svg)](https://github.com/vineetbansal/rusty/actions/workflows/ci.yml)
+
 Rusty
 =====
 
