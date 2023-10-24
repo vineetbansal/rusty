@@ -22,3 +22,6 @@ dev = [
 features = ["pyo3/extension-module"]
 manifest-path = "../rust/Cargo.toml"
 python-source = "src"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
