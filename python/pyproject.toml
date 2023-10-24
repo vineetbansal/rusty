@@ -19,7 +19,7 @@ dev = [
 ]
 
 [tool.maturin]
-features = ["pyo3/extension-module"]
+features = ["extension-module"]
 manifest-path = "../rust/Cargo.toml"
 python-source = "src"
 

@@ -1,3 +1,4 @@
+#![cfg(feature = "extension-module")]
 use pyo3::prelude::*;
 
 use crate::{myrustmodule};
