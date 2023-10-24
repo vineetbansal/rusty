@@ -1,0 +1,11 @@
+[package]
+name = "rusty"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rusty"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = { version = "0.18.3", features = ["extension-module"] }
