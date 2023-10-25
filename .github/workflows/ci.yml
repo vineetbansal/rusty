@@ -40,6 +40,7 @@ jobs:
           python -m build .
           python -m pip install dist/*.whl
         working-directory: python
+        shell: bash
 
       - name: Pytest
         run: pytest
