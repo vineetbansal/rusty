@@ -13,6 +13,8 @@ cargo test
 
 ### Python Wrapper Development
 
+From inside your venv:
+
 ```shell
 pip install -e .[dev]
 pytest
@@ -21,8 +23,13 @@ pytest
 ### Hybrid Development
 
 If you know what you're doing.
+
 ```shell
 pip install maturin
-maturin develop
+maturin develop --extras=dev
 pytest
 ```
+
+### Nox development
+
+Standard nox sessions are provided.
