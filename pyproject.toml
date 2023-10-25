@@ -20,8 +20,7 @@ dev = [
 
 [tool.maturin]
 features = ["extension-module"]
-manifest-path = "../rust/Cargo.toml"
-python-source = "src"
+python-source = "python"
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["python/tests"]

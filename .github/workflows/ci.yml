@@ -33,15 +33,12 @@ jobs:
 
       - name: Test Rust
         run: cargo test --verbose --no-default-features
-        working-directory: rust
 
       - name: Build & Install Python package
         run: |
           python -m build .
           python -m pip install dist/*.whl
-        working-directory: python
         shell: bash
 
       - name: Pytest
         run: pytest
-        working-directory: python
