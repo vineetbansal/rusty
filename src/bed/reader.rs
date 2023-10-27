@@ -14,11 +14,9 @@ impl Debug for BedReader {
 }
 
 impl BedReader {
-    pub fn new(bed_file: String) -> BedReader {
-        let mut lines = Vec::new();
-        for line in read_to_string(&bed_file).unwrap().lines() {
-            lines.push(line.to_string());
-        }
+    pub fn new(bed_file: Option<String>) -> BedReader {
+        let bed_file = bed_file.unwrap_or("tests/data/sample.bed".to_string());
+        let lines = read_to_string(&bed_file).unwrap().lines().map(String::from).collect();
         BedReader { bed_file, lines }
     }
 
