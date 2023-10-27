@@ -22,7 +22,7 @@ mod tests {
     }
 
     #[test]
-    #[should_panic(expected = "No such file or directory")]
+    #[should_panic(expected = "NotFound")]
     fn test_bed_reader_invalid() {
         let bed_reader: BedReader = BedReader::new(Some("/no/such/file".to_string()));
     }
