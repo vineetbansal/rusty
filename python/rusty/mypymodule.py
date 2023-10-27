@@ -1,5 +1,1 @@
-from .rusty import py_factorial
-
-
-def factorial(x):
-    return py_factorial(x)
+from .rusty import py_factorial as factorial, PyBedReader as BedReader
