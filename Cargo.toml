@@ -2,6 +2,8 @@
 name = "rusty"
 version = "0.1.0"
 edition = "2021"
+# Will be uncommented once we get fetch_data::FetchData to work
+# exclude = ["tests/data/*"]
 
 [lib]
 name = "rusty"
@@ -9,6 +11,7 @@ crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 pyo3 = { version = "0.18.3", features = ["extension-module"], optional = true }
+fetch-data = "0.1.6"
 
 [features]
 extension-module = ["pyo3/extension-module"]
